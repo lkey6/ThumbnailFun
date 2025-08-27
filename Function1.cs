@@ -13,7 +13,7 @@ namespace ThumbnailFunction
     {
         [FunctionName("GenerateThumbnail")]
         public static async Task Run(
-            [BlobTrigger("mengmeng/{*name}", Connection = "AzureWebJobsStorage")] Stream inputBlob,
+            [BlobTrigger("mengmeng/{name}", Connection = "AzureWebJobsStorage")] Stream inputBlob,
             string name,
             ILogger log)
         {
